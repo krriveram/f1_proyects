@@ -7,7 +7,6 @@ import fastf1.plotting
 from fastf1.core import Laps
 
 
-
 import streamlit as st
 import fastf1
 import pandas as pd
@@ -34,7 +33,7 @@ fastf1.Cache.enable_cache(CACHE_DIR)
 #we can check the data with this functions
 schedule = fastf1.get_event_schedule(2021)
 st.dataframe(schedule)
-
+#this is just to check our info at first
 session = fastf1.get_session(2025, 'Las Vegas', 'R')
 session.load()
 st.dataframe(session.results)
